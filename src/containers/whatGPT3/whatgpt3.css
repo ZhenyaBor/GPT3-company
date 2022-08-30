@@ -1,0 +1,74 @@
+.gpt3__whatgpt3 {
+  max-width: 1210px;
+  margin: auto;
+  padding: 63px 75px;
+  background: #042c54;
+}
+.gpt3__whatgpt3-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gpt3__whatgpt3-text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+  max-width: 472px;
+  margin: 91px 0;
+}
+.gpt3__whatgpt3-subtitle {
+  align-self: start;
+  color: var(--color-subtext);
+  margin-top: 100px;
+}
+.gpt3__whatgpt3-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gpt3__whatgpt3-box .gpt3__featites-container__feature {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.gpt3__whatgpt3-box .gpt3__featites-container__feature h2 {
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 999px) {
+  .gpt3__whatgpt3-header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .gpt3__whatgpt3-text {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    max-width: 472px;
+    margin: 0 0;
+  }
+  .gpt3__whatgpt3-subtitle {
+    align-self: start;
+    color: var(--color-subtext);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .gpt3__whatgpt3-box .gpt3__featites-container__feature {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-self: start;
+  }
+  .gpt3__whatgpt3 {
+    max-width: 1210px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #031b34;
+  }
+  .gpt3__whatgpt3-box {
+    display: flex;
+    flex-direction: column;
+  }
+}

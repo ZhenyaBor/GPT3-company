@@ -1,0 +1,121 @@
+.section-padding {
+  display: flex;
+  max-width: 1210px;
+  margin: auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.texth1 {
+  width: 122%;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+}
+.gpt3-header-text-header {
+  width: 99%;
+}
+.gpt3-header-text-header p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--color-text);
+  margin-top: 33px;
+}
+.gpt3-header-img img {
+  width: 667.41px;
+  height: 701.59px;
+}
+.gpt3-header-form-box {
+  display: flex;
+  margin-top: 35px;
+}
+.gpt3-header-form-box input {
+  width: 91%;
+  border: none;
+  background: #052d56;
+  padding: 0 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+.gpt3-header-form-box button {
+  background: #ff4820;
+  height: 73px;
+  width: 174px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  border: none;
+}
+.gpt3-header-content__people {
+  margin-top: 39px;
+  display: flex;
+  position: relative;
+}
+.gpt3-header-content__people p {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  right: -300px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 38px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1120px) {
+  .section-padding {
+    display: flex;
+    flex-direction: column;
+  }
+  .texth1 {
+    width: 80%;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+  }
+  .gpt3-header-content__people {
+    margin-top: 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gpt3-header-content__people p {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    position: static;
+  }
+  .gpt3-header-content__people img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 690px) {
+  .gpt3-header-img img {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    margin: auto;
+  }
+  .texth1 {
+    width: 100%;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: -0.04em;
+  }
+  .gpt3-header-text-header p {
+    font-size: 16px;
+  }
+}

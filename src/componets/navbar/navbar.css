@@ -1,0 +1,187 @@
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.gpt3__navbar {
+  max-width: 1210px;
+  height: 58px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 55px 20px;
+}
+
+.gpt3__navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 59.58%;
+}
+.gpt3__navbar-links_logo img {
+  width: 62.56px;
+  height: 16.02px;
+  display: flex;
+  align-items: center;
+}
+.gpt3__navbar-links {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.gpt3__navbar-links li a {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+.gpt3__navbar-button {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gpt3__navbar-button_none {
+  width: 152px;
+  height: 58px;
+  background-color: #ff4820;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  align-self: flex-end;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  cursor: pointer;
+}
+.gpt3__navbar-button_action {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  cursor: pointer;
+}
+.gpt3__navbar-hiden {
+  display: none;
+}
+.gpt3__navbar-menu_container,
+.scale-up-center {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  transition: all 2s;
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  background: -o-linear-gradient(
+    90deg,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040C18', endColorstr='#002853', GradientType=0 );
+
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+  text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .gpt3__navbar-button {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .gpt3__navbar-links {
+    position: absolute;
+    opacity: 0;
+  }
+  .gpt3__navbar-button {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+  .gpt3__navbar-button_action {
+    margin-right: 26px;
+  }
+  .gpt3__navbar-hiden {
+    width: 30px;
+    height: 30px;
+    margin-left: 26px;
+    display: block;
+    color: #ffffff;
+  }
+  .gpt3__navbar-menu_container li a {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 50px;
+  }
+  .gpt3__navbar-menu_container,
+  .scale-up-center {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    height: 100%;
+    transition: all 2s;
+  }
+  .gpt3__navbar-menu_container li {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gpt3__navbar-button_action,
+  .gpt3__navbar-button_none {
+    display: none;
+  }
+}
